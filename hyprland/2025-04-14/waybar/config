@@ -1,0 +1,56 @@
+{
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 35,
+    "spacing": 4,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "modules-left": [
+        "custom/launcher",
+        "wlr/taskbar"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+	"custom/sep",        
+        "hyprland/workspaces"
+    ],
+    "clock": {
+        "format": "{:%A %H:%M}",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "*": 3
+        }
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "icon-theme": "Star",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "on-click-right": "minimize"
+    },
+    "custom/launcher": {
+        "format": "󰣇",
+        "tooltip-format": "I use Arch btw",
+        "on-click": "wofi --show drun",
+        "on-click-right": "killall wofi"
+    },
+    "tray": {
+        "icon-size": 18,
+        "show-passive-items": "true"
+    },
+    "custom/sep": {
+	"format": "|"
+    }
+}
