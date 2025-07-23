@@ -1,0 +1,66 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "spacing": 4,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "modules-left": [
+        "custom/launcher",
+        "wlr/taskbar"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "custom/separator",
+        "niri/language",
+        "pulseaudio/slider",
+        "pulseaudio",
+        "custom/separator",
+        "niri/workspaces"
+    ],
+    "clock": {
+        "format": "{:%A %H:%M}",
+        "tooltip": false
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "icon-theme": "Star",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "on-click-right": "minimize"
+    },
+    "custom/launcher": {
+        "format": "",
+        "tooltip-format": "I don't use Arch btw",
+        "on-click": "rofi -show drun -show-icons -theme everforest",
+        "on-click-right": "killall rofi"
+    },
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    },
+    "tray": {
+        "icon-size": 15,
+        "show-passive-items": "true",
+        "spacing": 8
+    },
+    "custom/separator": {
+        "format": "|"
+    },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
+    "niri/language": {
+        "format": "{short}"
+    }
+}

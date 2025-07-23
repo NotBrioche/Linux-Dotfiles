@@ -1,0 +1,1 @@
+ls -1 | sort -R | while read line ; do gowall convert $line -t green ; done
