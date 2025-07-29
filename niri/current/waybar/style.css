@@ -5,13 +5,13 @@ window#waybar {
 
 #workspaces button {
     border: 0px;
-    font-family: "Cousine Nerd Font";
+    font-family: "Symbols Nerd Font Mono";
     background: transparent;
     color: white;
 }
 
 #custom-launcher {
-    font-family: "Cousine Nerd Font";
+    font-family: "Symbols Nerd Font Mono";
     padding: 0px 10px;
     font-size: 20px;
 }
@@ -35,6 +35,6 @@ window#waybar {
 #pulseaudio-slider highlight {
     min-width: 0px;
     border-radius: 5px;
-    background-color: #009E6C;
-    border-color: #009E6C;
+    background-color: #328f6f;
+    border-color: #7eb587;
 }
